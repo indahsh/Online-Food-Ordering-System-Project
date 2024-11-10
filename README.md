@@ -16,54 +16,54 @@
 
 ## 3. ERD CONCEPTUAL
 ### 3.1. Entity
-a. Customer
+#### a. Customer
 <p align="justify">This entity represents the customer who uses the system. The main attribute is customer_id, first_name, last_name, phone_number, address, and email.</p>
 
-b. Orders
+#### b. Orders
 <p align="justify">This entity records customer orders. The main attribute is order_id, order date, and payment method (including options such as cash and transfer), which is related to the customer entity through customer_id.</p>
 
-c. Delivery
+#### c. Delivery
 <p align="justify">This entity records delivery information. The main attribute is driver_id, driver_name, phone_number, and license_plate data, which is related to the orders entity through order_id.</p>
 
-d. Pickup
+#### d. Pickup
 <p align="justify">This entity records order pickup information with the main attributes of pickup_id and pickup_time, which is related to the orders entity through order_id.</p>
 
-e. Restaurant
+#### e. Restaurant
 <p align="justify">This entity stores information about the restaurant. The main attribute is restaurant_id, restaurant_name, address, and phone_number.</p>
 
-f. Menu Item
+#### f. Menu Item
 <p align="justify">This entity represents the food or drinks offered by the restaurant. The main attribute is item_id, item_name, price, and description item, which is related to the restaurant entity through restaurant_id.</p>
 
-g. Order Detail
+#### g. Order Detail
 <p align="justify">This entity is a detailed representation of each order placed by a customer in the online food ordering system. The main attribute is item_quantity, which is related to the menu item entity through item_id and orders entity through order_id.</p>
 
 ### 3.2. Relationship between Entities
-a. Customer and Orders
+#### a. Customer and Orders
 <p align="justify">- Each customer must has one or more orders.</p>
 <p align="justify">- Each order must ordered by one and only one customer.</p>
 
-b. Orders and Delivery
+#### b. Orders and Delivery
 <p align="justify">- Each order may be ordered by one and only one delivery.</p>
 <p align="justify">- Each delivery must has one and only one order.</p>
 
-c. Orders and Pickup
+#### c. Orders and Pickup
 <p align="justify">- Each order may be ordered by one and only one pickup.</p>
 <p align="justify">- Each pickup must has one and only one order.</p>
 
-d. Orders and Order Detail
+#### d. Orders and Order Detail
 <p align="justify">- Each order must has one or more order details.</p>
 <p align="justify">- Each order detail must refers to one and only one order.</p>
 
-e. Order Detail and Menu Item
+#### e. Order Detail and Menu Item
 <p align="justify">- Each order detail must has one and only one menu item.</p>
 <p align="justify">- Each menu item must refers to one or more order details.</p>
 
-f. Menu Item and Restaurant
+#### f. Menu Item and Restaurant
 <p align="justify">- Each menu item must offered by one and only one restaurant.</p>
 <p align="justify">- Each restaurant may be offers one or more menu item.</p>
 
 ## 4. STUDY CASES
-1. <p align="justify">Create a simple view that displays a list of restaurants in Jl Jakarta.</p>
+#### 1. <p align="justify">Create a simple view that displays a list of restaurants in Jl Jakarta.</p>
 
 | RESTAURANT_ID | RESTAURANT_NAME | ADDRESS | PHONE_NUMBER |
 | --- | --- | --- | --- |
@@ -71,7 +71,7 @@ f. Menu Item and Restaurant
 | R0003 | Mie Ayam Bakso TOP | Jl. Jakarta No. 5 | 81876543210 |
 | R0005 | Seafood House | Jl. Jakarta No. 7 | 81654321098 |
 
-2. <p align="justify">Insert data in simple view.</p>
+#### 2. <p align="justify">Insert data in simple view.</p>
 
 | RESTAURANT_ID | RESTAURANT_NAME | ADDRESS | PHONE_NUMBER |
 | --- | --- | --- | --- |
@@ -80,13 +80,13 @@ f. Menu Item and Restaurant
 | R0006 | Rumah Makan Sunda | Jl. Jakarta No. 13 | 81543210987 |
 | R0005 | Seafood House | Jl. Jakarta No. 7 | 81654321098 |
 
-3. <p align="justify">View the customer's order summary by creating a complex view.</p>
+#### 3. <p align="justify">View the customer's order summary by creating a complex view.</p>
 
 | FIRST_NAME | LAST_NAME | ADDRESS | ORDER_ID | ORDER_DATE | PAYMENT_METHOD |
 | --- | --- | --- | --- | --- | --- |
 | Stefani | Lina | Jl. Mawar No. 1 | O0003 | 08/08/2024 | 1 |
 
-4. <p align="justify">Create synonyms from view_resto_jakarta to resto_jakarta.</p>
+#### 4. <p align="justify">Create synonyms from view_resto_jakarta to resto_jakarta.</p>
 
 | RESTAURANT_ID | RESTAURANT_NAME | ADDRESS | PHONE_NUMBER |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@ f. Menu Item and Restaurant
 | R0006 | Rumah Makan Sunda | Jl. Jakarta No. 13 | 81543210987 |
 | R0005 | Seafood House | Jl. Jakarta No. 7 | 81654321098 |
 
-5. <p align="justify">Create sequences for order number.</p>
+#### 5. <p align="justify">Create sequences for order number.</p>
 
 | ORDER_ID | CUSTOMER_ID | ORDER_DATE | PAYMENT_METHOD |
 | --- | --- | --- | --- |
@@ -105,7 +105,7 @@ f. Menu Item and Restaurant
 | O0005 | C0005 | 08/08/2024 | 2 |
 | O0003 | C0003 | 08/08/2024 | 1 |
 
-6. <p align="justify">Create index for customer_address.</p>
+#### 6. <p align="justify">Create index for customer_address.</p>
 
 | INDEX_NAME | INDEX_TYPE | TABLE_OWNER | TABLE_NAME | ... | UNIQUENESS |
 | --- | --- | --- | --- | --- | --- |
