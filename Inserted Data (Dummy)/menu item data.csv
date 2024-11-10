@@ -1,0 +1,6 @@
+ITEM_ID,ITEM_NAME,PRICE,RESTAURANT_ID,DESCRIPTION_ITEM
+I0001,Ayam Geprek Barbeque,25000,R0001,Nasi + Ayam Geprek + Sambal Matah
+I0004,Nasi Goreng Kampung,19000,R0004,Nasi Goreng + Bakso + Sosis
+I0002,Shio Ramen,27000,R0002,Ramen + Ayam + Telur + Sayuran
+I0005,Cumi Goreng Tepung,26000,R0005,Cumi Goreng + Mayonnaise
+I0003,Mie Ayam Bakso Urat,22000,R0003,Mie Ayam + Bakso Urat
