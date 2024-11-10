@@ -63,7 +63,7 @@
 <p align="justify">- Each restaurant may be offers one or more menu item.</p>
 
 ## 4. STUDY CASES
-#### 1. <p align="justify">Create a simple view that displays a list of restaurants in Jl Jakarta.</p>
+#### 1. Create a simple view that displays a list of restaurants in Jl Jakarta.
 
 | RESTAURANT_ID | RESTAURANT_NAME | ADDRESS | PHONE_NUMBER |
 | --- | --- | --- | --- |
@@ -71,7 +71,7 @@
 | R0003 | Mie Ayam Bakso TOP | Jl. Jakarta No. 5 | 81876543210 |
 | R0005 | Seafood House | Jl. Jakarta No. 7 | 81654321098 |
 
-#### 2. <p align="justify">Insert data in simple view.</p>
+#### 2. Insert data in simple view.
 
 | RESTAURANT_ID | RESTAURANT_NAME | ADDRESS | PHONE_NUMBER |
 | --- | --- | --- | --- |
@@ -80,13 +80,13 @@
 | R0006 | Rumah Makan Sunda | Jl. Jakarta No. 13 | 81543210987 |
 | R0005 | Seafood House | Jl. Jakarta No. 7 | 81654321098 |
 
-#### 3. <p align="justify">View the customer's order summary by creating a complex view.</p>
+#### 3. View the customer's order summary by creating a complex view.
 
 | FIRST_NAME | LAST_NAME | ADDRESS | ORDER_ID | ORDER_DATE | PAYMENT_METHOD |
 | --- | --- | --- | --- | --- | --- |
 | Stefani | Lina | Jl. Mawar No. 1 | O0003 | 08/08/2024 | 1 |
 
-#### 4. <p align="justify">Create synonyms from view_resto_jakarta to resto_jakarta.</p>
+#### 4. Create synonyms from view_resto_jakarta to resto_jakarta.
 
 | RESTAURANT_ID | RESTAURANT_NAME | ADDRESS | PHONE_NUMBER |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@
 | R0006 | Rumah Makan Sunda | Jl. Jakarta No. 13 | 81543210987 |
 | R0005 | Seafood House | Jl. Jakarta No. 7 | 81654321098 |
 
-#### 5. <p align="justify">Create sequences for order number.</p>
+#### 5. Create sequences for order number.
 
 | ORDER_ID | CUSTOMER_ID | ORDER_DATE | PAYMENT_METHOD |
 | --- | --- | --- | --- |
@@ -105,7 +105,7 @@
 | O0005 | C0005 | 08/08/2024 | 2 |
 | O0003 | C0003 | 08/08/2024 | 1 |
 
-#### 6. <p align="justify">Create index for customer_address.</p>
+#### 6. Create index for customer_address.
 
 | INDEX_NAME | INDEX_TYPE | TABLE_OWNER | TABLE_NAME | ... | UNIQUENESS |
 | --- | --- | --- | --- | --- | --- |
