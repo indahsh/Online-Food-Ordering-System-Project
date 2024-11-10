@@ -15,6 +15,10 @@
 6. <p align="justify">Creating indexes to speed up searching customer data by address.</p>
 
 ## 3. ERD CONCEPTUAL
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1671824c-99f6-4ffb-b502-ac0e7fb70222" width="75%"/>
+</p>
+
 ### 3.1. Entity
 #### a. Customer
 <p align="justify">This entity represents the customer who uses the system. The main attribute is customer_id, first_name, last_name, phone_number, address, and email.</p>
