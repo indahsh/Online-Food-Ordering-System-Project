@@ -16,7 +16,7 @@
 
 ## 3. ERD CONCEPTUAL
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/93b27dcb-6ff1-4272-9e35-dfac34be4d26" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/93b27dcb-6ff1-4272-9e35-dfac34be4d26" width="80%"/>
 </p>
 
 ### 3.1. Entity
